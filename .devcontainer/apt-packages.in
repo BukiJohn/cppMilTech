@@ -6,6 +6,7 @@ sudo
 tzdata
 ssh
 git
+bash-completion
 
 # C++ toolchain і language server для редактора.
 gcc
