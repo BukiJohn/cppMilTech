@@ -4,7 +4,6 @@
   "version": "2.0.0",
   "tasks": [
     {
-      // Default build task: Ctrl+Shift+B запускає debug preset, потім build.
       "label": "CMake: configure and build",
       "type": "shell",
       "command": "cmake --preset debug && cmake --build --preset debug",
@@ -12,9 +11,7 @@
         "kind": "build",
         "isDefault": true
       },
-      "problemMatcher": [
-        "$gcc"
-      ],
+      "problemMatcher": [],
       "presentation": {
         "reveal": "always",
         "panel": "dedicated",
@@ -22,7 +19,6 @@
       }
     },
     {
-      // Clean task навмисно простий: видаляється тільки локальна build директорія.
       "label": "CMake: clean build directory",
       "type": "shell",
       "command": "rm -rf build",
